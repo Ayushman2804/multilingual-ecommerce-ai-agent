@@ -17,7 +17,7 @@ A production-grade, low-latency multilingual customer service AI agent built for
 ## Project Roadmap
 - [x] **Phase 1**: Architecture, latency budget analysis, and design doc.
 - [x] **Phase 2**: Knowledge base and multilingual RAG with source citations.
-- [ ] **Phase 3**: Agent logic, language detection, and mock tool calling.
+- [x] **Phase 3**: Agent logic, language detection, and mock tool calling.
 - [ ] **Phase 4**: Session memory, sentiment analysis, and human escalation.
 - [ ] **Phase 5**: Guardrails, prompt injection defense, and PII masking.
 - [ ] **Phase 6**: FastAPI backend with SSE streaming and chat UI.
