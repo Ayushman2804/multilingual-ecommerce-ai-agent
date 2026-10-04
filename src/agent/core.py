@@ -1,14 +1,15 @@
-"""Core Multilingual Agent coordinator.
-
-Performs deterministic sub-5ms intent & language routing, executes tools or
-retrieves knowledge base articles, and synthesizes localized responses.
-"""
 import time
+import uuid
 from typing import Dict, Any, Optional
 
 from src.agent.lang_detector import detect_language
 from src.agent.router import route_intent, Intent
 from src.agent.prompts import LOCALIZED_PROMPTS
+from src.agent.memory import session_manager, ConversationSession
+from src.agent.sentiment import compute_sentiment_score
+from src.agent.escalation import generate_handoff_ticket, HandoffTicket
+from src.guardrails.pii import mask_pii
+from src.guardrails.safety import check_safety_and_scope
 from src.tools.order_tools import lookup_order, request_return_or_refund, lookup_product
 from src.rag.retriever import MultilingualRetriever
 
@@ -17,27 +18,80 @@ class MultilingualCSAgent:
     def __init__(self, retriever: MultilingualRetriever):
         self.retriever = retriever
 
-    def process_message(self, message: str, user_language: Optional[str] = None) -> Dict[str, Any]:
-        """Processes incoming user query, routes to tool or RAG, and produces response."""
+    def process_message(
+        self,
+        message: str,
+        session_id: Optional[str] = None,
+        user_language: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Processes incoming user query, applies guardrails, updates memory, and synthesizes response."""
         start_time = time.perf_counter()
 
-        # 1. Detect language (sub-2ms)
-        lang = user_language or detect_language(message)
+        # 0. PII Redaction Guardrail
+        sanitized_message, pii_counts = mask_pii(message)
+
+        # 1. Session Memory setup
+        sess_id = session_id or f"sess_{uuid.uuid4().hex[:8]}"
+        session = session_manager.get_or_create(sess_id)
+
+        # 2. Language Detection
+        lang = user_language or detect_language(sanitized_message)
+        session.user_language = lang
         prompts = LOCALIZED_PROMPTS.get(lang, LOCALIZED_PROMPTS["en"])
 
-        # 2. Intent routing (sub-5ms)
-        route_info = route_intent(message)
+        # 3. Prompt-Injection & Scope Guardrail Check
+        is_safe, refusal_msg, safety_meta = check_safety_and_scope(sanitized_message, lang)
+        if not is_safe:
+            elapsed_ms = (time.perf_counter() - start_time) * 1000.0
+            session.add_turn(role="user", content=sanitized_message, language=lang, intent="blocked")
+            session.add_turn(role="assistant", content=refusal_msg, language=lang, intent="blocked")
+            return {
+                "session_id": session.session_id,
+                "query": sanitized_message,
+                "language": lang,
+                "intent": "blocked_by_guardrails",
+                "response": refusal_msg,
+                "tool_data": None,
+                "citations": [],
+                "is_escalated": False,
+                "frustration_score": session.frustration_score,
+                "handoff_ticket": None,
+                "pii_redacted": pii_counts,
+                "safety_metadata": safety_meta,
+                "latency_ms": round(elapsed_ms, 2),
+            }
+
+        # 4. Sentiment analysis & frustration tracking
+        turn_sentiment = compute_sentiment_score(sanitized_message, lang)
+        session.frustration_score = max(session.frustration_score, turn_sentiment)
+
+        # 5. Intent routing (sub-5ms)
+        route_info = route_intent(sanitized_message)
         intent = route_info["intent"]
+
+        # Track referenced orders
+        if route_info.get("order_id"):
+            session.order_ids_referenced.append(route_info["order_id"])
 
         response_text = ""
         tool_data = None
         citations = []
         is_escalated = False
+        handoff_ticket: Optional[HandoffTicket] = None
 
-        # 3. Execution Branching
+        # Check frustration threshold (> 0.60)
+        if session.frustration_score >= 0.60 and intent != Intent.ESCALATION:
+            intent = Intent.ESCALATION
+            route_info["reason"] = f"High customer frustration detected ({session.frustration_score:.2f})"
+
+        # 4. Execution Branching
         if intent == Intent.ESCALATION:
             is_escalated = True
+            session.is_escalated = True
+            reason = route_info.get("reason", "Customer requested human representative.")
+            session.escalation_reason = reason
             response_text = prompts["escalation_notice"]
+            handoff_ticket = generate_handoff_ticket(session, reason)
 
         elif intent == Intent.ORDER_LOOKUP:
             order_id = route_info.get("order_id")
@@ -77,16 +131,24 @@ class MultilingualCSAgent:
             else:
                 response_text = "I could not find a relevant policy. Let me connect you with an agent."
 
+        # 5. Record session history
+        session.add_turn(role="user", content=message, language=lang, intent=intent.value)
+        session.add_turn(role="assistant", content=response_text, language=lang, intent=intent.value)
+
         elapsed_ms = (time.perf_counter() - start_time) * 1000.0
 
         return {
-            "query": message,
+            "session_id": session.session_id,
+            "query": sanitized_message,
             "language": lang,
             "intent": intent.value,
             "response": response_text,
             "tool_data": tool_data,
             "citations": citations,
             "is_escalated": is_escalated,
+            "frustration_score": session.frustration_score,
+            "handoff_ticket": handoff_ticket.model_dump() if handoff_ticket else None,
+            "pii_redacted": pii_counts,
             "latency_ms": round(elapsed_ms, 2),
         }
 
