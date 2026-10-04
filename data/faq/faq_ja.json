@@ -1,0 +1,34 @@
+[
+  {
+    "id": "faq_ja_returns_01",
+    "category": "returns",
+    "language": "ja",
+    "title": "30日間返品ポリシー",
+    "content": "商品到着後30日以内であれば、未使用かつ未開封の元のパッケージ状態に限り、全額返金にて返品を承ります。初期不良または誤配送の場合、返送料は弊社が全額負担いたします。お客様都合による返品の場合は、返送料として500円が返金額から差し引かれます。",
+    "source_url": "https://store.example.com/ja/policies/returns#30-days"
+  },
+  {
+    "id": "faq_ja_shipping_01",
+    "category": "shipping",
+    "language": "ja",
+    "title": "配送料金および配送日数",
+    "content": "日本国内の通常配送はご注文確定後2〜4営業日でお届けします。5,000円以上のご注文で配送料は無料です（未満の場合は一律550円）。お急ぎ便は翌日〜2営業日でお届け（手数料800円）。海外発送は通関状況により7〜14営業日かかります。",
+    "source_url": "https://store.example.com/ja/policies/shipping#rates"
+  },
+  {
+    "id": "faq_ja_payments_01",
+    "category": "payments",
+    "language": "ja",
+    "title": "お支払い方法と返金処理期間",
+    "content": "クレジットカード（Visa、Mastercard、JCB、Amex）、PayPay、Apple Pay、コンビニ決済をご利用いただけます。返品受領および検品完了後、3〜5営業日以内に返金処理が行われます。クレジットカード会社により口座反映まで最大1〜2ヶ月かかる場合があります。",
+    "source_url": "https://store.example.com/ja/policies/payments#methods"
+  },
+  {
+    "id": "faq_ja_warranty_01",
+    "category": "warranty",
+    "language": "ja",
+    "title": "1年間メーカー限定保証",
+    "content": "すべての電子機器製品には、材質および製造上の欠陥に対する1年間のメーカー限定保証が付帯しています。落下、水没、不当な修理、経年劣化による破損は保証対象外となります。",
+    "source_url": "https://store.example.com/ja/policies/warranty#coverage"
+  }
+]

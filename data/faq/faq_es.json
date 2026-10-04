@@ -1,0 +1,34 @@
+[
+  {
+    "id": "faq_es_returns_01",
+    "category": "returns",
+    "language": "es",
+    "title": "Política de Devolución de 30 Días",
+    "content": "Los clientes pueden devolver artículos sin usar en su embalaje original dentro de los 30 días posteriores a la entrega para obtener un reembolso completo. El envío de devolución es gratuito para artículos dañados o erróneos. Para devoluciones voluntarias, se deduce una tarifa fija de 5,99 € por la etiqueta de devolución.",
+    "source_url": "https://store.example.com/es/politicas/devoluciones#30-dias"
+  },
+  {
+    "id": "faq_es_shipping_01",
+    "category": "shipping",
+    "language": "es",
+    "title": "Tiempos y Costes de Envío",
+    "content": "El envío estándar nacional demora entre 3 y 5 días hábiles y es gratuito en pedidos superiores a 50 € (4,99 € en caso contrario). El envío exprés demora entre 1 y 2 días hábiles (14,99 €). Los envíos internacionales tardan entre 7 y 14 días hábiles.",
+    "source_url": "https://store.example.com/es/politicas/envios#tarifas"
+  },
+  {
+    "id": "faq_es_payments_01",
+    "category": "payments",
+    "language": "es",
+    "title": "Métodos de Pago y Plazos de Reembolso",
+    "content": "Aceptamos Visa, MasterCard, PayPal, Apple Pay y Klarna. Tras la inspección del paquete en almacén, los reembolsos se emiten en un plazo de 3 a 5 días hábiles al método de pago original.",
+    "source_url": "https://store.example.com/es/politicas/pagos#metodos"
+  },
+  {
+    "id": "faq_es_warranty_01",
+    "category": "warranty",
+    "language": "es",
+    "title": "Garantía Limitada del Fabricante de 1 Año",
+    "content": "Todos los dispositivos electrónicos cuentan con una garantía de 1 año contra defectos de fabricación y materiales. No cubre caídas accidentales, daños por agua ni desgaste estético habitual.",
+    "source_url": "https://store.example.com/es/politicas/garantia#cobertura"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "faq_en_returns_01",
+    "category": "returns",
+    "language": "en",
+    "title": "30-Day Return Policy",
+    "content": "Customers can return unused items in original packaging within 30 days of delivery for a full refund. Return shipping is free for damaged or incorrect items. For change-of-mind returns, a flat $5.99 return shipping label fee is deducted from the refund.",
+    "source_url": "https://store.example.com/policies/returns#30-day"
+  },
+  {
+    "id": "faq_en_returns_02",
+    "category": "returns",
+    "language": "en",
+    "title": "Non-Returnable Items",
+    "content": "Intimate apparel, opened hygiene products, perishable goods, and customized or personalized items are strictly non-returnable unless defective upon arrival.",
+    "source_url": "https://store.example.com/policies/returns#exceptions"
+  },
+  {
+    "id": "faq_en_shipping_01",
+    "category": "shipping",
+    "language": "en",
+    "title": "Standard and Express Shipping",
+    "content": "Standard domestic shipping takes 3 to 5 business days and is free on orders over $50 ($4.99 otherwise). Express shipping takes 1 to 2 business days at $14.99. International shipping takes 7 to 14 business days depending on customs clearance.",
+    "source_url": "https://store.example.com/policies/shipping#rates"
+  },
+  {
+    "id": "faq_en_shipping_02",
+    "category": "shipping",
+    "language": "en",
+    "title": "Lost or Damaged Packages",
+    "content": "If your tracking shows delivered but you haven't received the package, please wait 24 hours. If it still does not arrive, contact support within 7 days of the marked delivery date for a replacement or full refund.",
+    "source_url": "https://store.example.com/policies/shipping#lost-packages"
+  },
+  {
+    "id": "faq_en_payments_01",
+    "category": "payments",
+    "language": "en",
+    "title": "Accepted Payment Methods",
+    "content": "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Klarna pay-in-4 installments. All transactions are encrypted via 256-bit SSL.",
+    "source_url": "https://store.example.com/policies/payments#methods"
+  },
+  {
+    "id": "faq_en_payments_02",
+    "category": "payments",
+    "language": "en",
+    "title": "Refund Processing Times",
+    "content": "Once your return is inspected and approved at our warehouse, refunds are processed within 3 to 5 business days. The funds will reflect on your original payment method depending on your bank's billing cycle (typically 5 to 10 business days).",
+    "source_url": "https://store.example.com/policies/payments#refund-times"
+  },
+  {
+    "id": "faq_en_warranty_01",
+    "category": "warranty",
+    "language": "en",
+    "title": "1-Year Limited Manufacturer Warranty",
+    "content": "All electronics and hardware products are covered by a 1-year limited warranty against hardware defects in materials and workmanship. The warranty does not cover accidental water damage, drops, unauthorized repairs, or normal cosmetic wear and tear.",
+    "source_url": "https://store.example.com/policies/warranty#terms"
+  }
+]

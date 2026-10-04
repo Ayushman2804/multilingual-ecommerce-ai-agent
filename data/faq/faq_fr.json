@@ -1,0 +1,34 @@
+[
+  {
+    "id": "faq_fr_returns_01",
+    "category": "returns",
+    "language": "fr",
+    "title": "Politique de Retour sous 30 Jours",
+    "content": "Vous pouvez retourner les articles non utilisés dans leur emballage d'origine dans les 30 jours suivant la livraison pour un remboursement intégral. Les retours sont gratuits pour les produits endommagés ou non conformes. Pour les retours de convenance, des frais de 5,99 € sont déduits du remboursement.",
+    "source_url": "https://store.example.com/fr/politiques/retours#30-jours"
+  },
+  {
+    "id": "faq_fr_shipping_01",
+    "category": "shipping",
+    "language": "fr",
+    "title": "Délais et Tarifs de Livraison",
+    "content": "La livraison standard en France métropolitaine prend 3 à 5 jours ouvrés et est offerte dès 50 € d'achat (4,99 € en dessous). La livraison express s'effectue en 1 à 2 jours ouvrés (14,99 €). La livraison internationale prend entre 7 et 14 jours ouvrés.",
+    "source_url": "https://store.example.com/fr/politiques/livraison#tarifs"
+  },
+  {
+    "id": "faq_fr_payments_01",
+    "category": "payments",
+    "language": "fr",
+    "title": "Moyens de Paiement et Remboursements",
+    "content": "Nous acceptons Visa, MasterCard, CB, PayPal, Apple Pay et Klarna. Les remboursements sont validés dans les 3 à 5 jours ouvrés suivant la réception du colis dans nos entrepôts.",
+    "source_url": "https://store.example.com/fr/politiques/paiements#modalites"
+  },
+  {
+    "id": "faq_fr_warranty_01",
+    "category": "warranty",
+    "language": "fr",
+    "title": "Garantie Constructeur de 1 An",
+    "content": "Tous nos produits électroniques bénéficient d'une garantie légale et fabricant de 1 an couvrant les pannes matérielles. Les dommages causés par une chute, l'oxydation liquide ou l'usure normale sont exclus.",
+    "source_url": "https://store.example.com/fr/politiques/garantie#conditions"
+  }
+]

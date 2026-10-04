@@ -1,0 +1,209 @@
+[
+  {
+    "id": "faq_de_returns_01",
+    "category": "returns",
+    "language": "de",
+    "title": "30-tägiges Rückgaberecht",
+    "content": "Kunden können unbenutzte Artikel in der Originalverpackung innerhalb von 30 Tagen nach Erhalt gegen volle Rückerstattung zurücksenden. Der Rückversand ist bei beschädigten oder falschen Artikeln kostenlos. Bei normalen Rücksendungen wird eine Rücksendegebühr von 5,99 € von der Erstattung abgezogen.",
+    "source_url": "https://store.example.com/de/richtlinien/rueckgabe#30-tage",
+    "embed_text": "Title: 30-tägiges Rückgaberecht\nCategory: returns\nContent: Kunden können unbenutzte Artikel in der Originalverpackung innerhalb von 30 Tagen nach Erhalt gegen volle Rückerstattung zurücksenden. Der Rückversand ist bei beschädigten oder falschen Artikeln kostenlos. Bei normalen Rücksendungen wird eine Rücksendegebühr von 5,99 € von der Erstattung abgezogen."
+  },
+  {
+    "id": "faq_de_shipping_01",
+    "category": "shipping",
+    "language": "de",
+    "title": "Versandoptionen und Lieferzeiten",
+    "content": "Der Standardversand innerhalb Deutschlands dauert 3 bis 5 Werktage und ist ab einem Bestellwert von 50 € versandkostenfrei (sonst 4,99 €). Expressversand benötigt 1 bis 2 Werktage (14,99 €). Der internationale Versand dauert 7 bis 14 Werktage.",
+    "source_url": "https://store.example.com/de/richtlinien/versand#preise",
+    "embed_text": "Title: Versandoptionen und Lieferzeiten\nCategory: shipping\nContent: Der Standardversand innerhalb Deutschlands dauert 3 bis 5 Werktage und ist ab einem Bestellwert von 50 € versandkostenfrei (sonst 4,99 €). Expressversand benötigt 1 bis 2 Werktage (14,99 €). Der internationale Versand dauert 7 bis 14 Werktage."
+  },
+  {
+    "id": "faq_de_payments_01",
+    "category": "payments",
+    "language": "de",
+    "title": "Zahlungsmethoden und Rückerstattungsfristen",
+    "content": "Wir akzeptieren Visa, MasterCard, PayPal, SOFORT Überweisung, Apple Pay und Klarna Rechnung. Nach Genehmigung im Lager erfolgt die Rückerstattung innerhalb von 3 bis 5 Werktagen auf das ursprüngliche Zahlungsmittel.",
+    "source_url": "https://store.example.com/de/richtlinien/zahlung#methoden",
+    "embed_text": "Title: Zahlungsmethoden und Rückerstattungsfristen\nCategory: payments\nContent: Wir akzeptieren Visa, MasterCard, PayPal, SOFORT Überweisung, Apple Pay und Klarna Rechnung. Nach Genehmigung im Lager erfolgt die Rückerstattung innerhalb von 3 bis 5 Werktagen auf das ursprüngliche Zahlungsmittel."
+  },
+  {
+    "id": "faq_de_warranty_01",
+    "category": "warranty",
+    "language": "de",
+    "title": "1 Jahr Herstellergarantie",
+    "content": "Für alle elektronischen Geräte gilt eine einjährige Herstellergarantie auf Material- und Verarbeitungsfehler. Schäden durch Herunterfallen, Wassereinwirkung oder eigenmächtige Reparaturen sind ausgeschlossen.",
+    "source_url": "https://store.example.com/de/richtlinien/garantie#umfang",
+    "embed_text": "Title: 1 Jahr Herstellergarantie\nCategory: warranty\nContent: Für alle elektronischen Geräte gilt eine einjährige Herstellergarantie auf Material- und Verarbeitungsfehler. Schäden durch Herunterfallen, Wassereinwirkung oder eigenmächtige Reparaturen sind ausgeschlossen."
+  },
+  {
+    "id": "faq_en_returns_01",
+    "category": "returns",
+    "language": "en",
+    "title": "30-Day Return Policy",
+    "content": "Customers can return unused items in original packaging within 30 days of delivery for a full refund. Return shipping is free for damaged or incorrect items. For change-of-mind returns, a flat $5.99 return shipping label fee is deducted from the refund.",
+    "source_url": "https://store.example.com/policies/returns#30-day",
+    "embed_text": "Title: 30-Day Return Policy\nCategory: returns\nContent: Customers can return unused items in original packaging within 30 days of delivery for a full refund. Return shipping is free for damaged or incorrect items. For change-of-mind returns, a flat $5.99 return shipping label fee is deducted from the refund."
+  },
+  {
+    "id": "faq_en_returns_02",
+    "category": "returns",
+    "language": "en",
+    "title": "Non-Returnable Items",
+    "content": "Intimate apparel, opened hygiene products, perishable goods, and customized or personalized items are strictly non-returnable unless defective upon arrival.",
+    "source_url": "https://store.example.com/policies/returns#exceptions",
+    "embed_text": "Title: Non-Returnable Items\nCategory: returns\nContent: Intimate apparel, opened hygiene products, perishable goods, and customized or personalized items are strictly non-returnable unless defective upon arrival."
+  },
+  {
+    "id": "faq_en_shipping_01",
+    "category": "shipping",
+    "language": "en",
+    "title": "Standard and Express Shipping",
+    "content": "Standard domestic shipping takes 3 to 5 business days and is free on orders over $50 ($4.99 otherwise). Express shipping takes 1 to 2 business days at $14.99. International shipping takes 7 to 14 business days depending on customs clearance.",
+    "source_url": "https://store.example.com/policies/shipping#rates",
+    "embed_text": "Title: Standard and Express Shipping\nCategory: shipping\nContent: Standard domestic shipping takes 3 to 5 business days and is free on orders over $50 ($4.99 otherwise). Express shipping takes 1 to 2 business days at $14.99. International shipping takes 7 to 14 business days depending on customs clearance."
+  },
+  {
+    "id": "faq_en_shipping_02",
+    "category": "shipping",
+    "language": "en",
+    "title": "Lost or Damaged Packages",
+    "content": "If your tracking shows delivered but you haven't received the package, please wait 24 hours. If it still does not arrive, contact support within 7 days of the marked delivery date for a replacement or full refund.",
+    "source_url": "https://store.example.com/policies/shipping#lost-packages",
+    "embed_text": "Title: Lost or Damaged Packages\nCategory: shipping\nContent: If your tracking shows delivered but you haven't received the package, please wait 24 hours. If it still does not arrive, contact support within 7 days of the marked delivery date for a replacement or full refund."
+  },
+  {
+    "id": "faq_en_payments_01",
+    "category": "payments",
+    "language": "en",
+    "title": "Accepted Payment Methods",
+    "content": "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Klarna pay-in-4 installments. All transactions are encrypted via 256-bit SSL.",
+    "source_url": "https://store.example.com/policies/payments#methods",
+    "embed_text": "Title: Accepted Payment Methods\nCategory: payments\nContent: We accept Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Klarna pay-in-4 installments. All transactions are encrypted via 256-bit SSL."
+  },
+  {
+    "id": "faq_en_payments_02",
+    "category": "payments",
+    "language": "en",
+    "title": "Refund Processing Times",
+    "content": "Once your return is inspected and approved at our warehouse, refunds are processed within 3 to 5 business days. The funds will reflect on your original payment method depending on your bank's billing cycle (typically 5 to 10 business days).",
+    "source_url": "https://store.example.com/policies/payments#refund-times",
+    "embed_text": "Title: Refund Processing Times\nCategory: payments\nContent: Once your return is inspected and approved at our warehouse, refunds are processed within 3 to 5 business days. The funds will reflect on your original payment method depending on your bank's billing cycle (typically 5 to 10 business days)."
+  },
+  {
+    "id": "faq_en_warranty_01",
+    "category": "warranty",
+    "language": "en",
+    "title": "1-Year Limited Manufacturer Warranty",
+    "content": "All electronics and hardware products are covered by a 1-year limited warranty against hardware defects in materials and workmanship. The warranty does not cover accidental water damage, drops, unauthorized repairs, or normal cosmetic wear and tear.",
+    "source_url": "https://store.example.com/policies/warranty#terms",
+    "embed_text": "Title: 1-Year Limited Manufacturer Warranty\nCategory: warranty\nContent: All electronics and hardware products are covered by a 1-year limited warranty against hardware defects in materials and workmanship. The warranty does not cover accidental water damage, drops, unauthorized repairs, or normal cosmetic wear and tear."
+  },
+  {
+    "id": "faq_es_returns_01",
+    "category": "returns",
+    "language": "es",
+    "title": "Política de Devolución de 30 Días",
+    "content": "Los clientes pueden devolver artículos sin usar en su embalaje original dentro de los 30 días posteriores a la entrega para obtener un reembolso completo. El envío de devolución es gratuito para artículos dañados o erróneos. Para devoluciones voluntarias, se deduce una tarifa fija de 5,99 € por la etiqueta de devolución.",
+    "source_url": "https://store.example.com/es/politicas/devoluciones#30-dias",
+    "embed_text": "Title: Política de Devolución de 30 Días\nCategory: returns\nContent: Los clientes pueden devolver artículos sin usar en su embalaje original dentro de los 30 días posteriores a la entrega para obtener un reembolso completo. El envío de devolución es gratuito para artículos dañados o erróneos. Para devoluciones voluntarias, se deduce una tarifa fija de 5,99 € por la etiqueta de devolución."
+  },
+  {
+    "id": "faq_es_shipping_01",
+    "category": "shipping",
+    "language": "es",
+    "title": "Tiempos y Costes de Envío",
+    "content": "El envío estándar nacional demora entre 3 y 5 días hábiles y es gratuito en pedidos superiores a 50 € (4,99 € en caso contrario). El envío exprés demora entre 1 y 2 días hábiles (14,99 €). Los envíos internacionales tardan entre 7 y 14 días hábiles.",
+    "source_url": "https://store.example.com/es/politicas/envios#tarifas",
+    "embed_text": "Title: Tiempos y Costes de Envío\nCategory: shipping\nContent: El envío estándar nacional demora entre 3 y 5 días hábiles y es gratuito en pedidos superiores a 50 € (4,99 € en caso contrario). El envío exprés demora entre 1 y 2 días hábiles (14,99 €). Los envíos internacionales tardan entre 7 y 14 días hábiles."
+  },
+  {
+    "id": "faq_es_payments_01",
+    "category": "payments",
+    "language": "es",
+    "title": "Métodos de Pago y Plazos de Reembolso",
+    "content": "Aceptamos Visa, MasterCard, PayPal, Apple Pay y Klarna. Tras la inspección del paquete en almacén, los reembolsos se emiten en un plazo de 3 a 5 días hábiles al método de pago original.",
+    "source_url": "https://store.example.com/es/politicas/pagos#metodos",
+    "embed_text": "Title: Métodos de Pago y Plazos de Reembolso\nCategory: payments\nContent: Aceptamos Visa, MasterCard, PayPal, Apple Pay y Klarna. Tras la inspección del paquete en almacén, los reembolsos se emiten en un plazo de 3 a 5 días hábiles al método de pago original."
+  },
+  {
+    "id": "faq_es_warranty_01",
+    "category": "warranty",
+    "language": "es",
+    "title": "Garantía Limitada del Fabricante de 1 Año",
+    "content": "Todos los dispositivos electrónicos cuentan con una garantía de 1 año contra defectos de fabricación y materiales. No cubre caídas accidentales, daños por agua ni desgaste estético habitual.",
+    "source_url": "https://store.example.com/es/politicas/garantia#cobertura",
+    "embed_text": "Title: Garantía Limitada del Fabricante de 1 Año\nCategory: warranty\nContent: Todos los dispositivos electrónicos cuentan con una garantía de 1 año contra defectos de fabricación y materiales. No cubre caídas accidentales, daños por agua ni desgaste estético habitual."
+  },
+  {
+    "id": "faq_fr_returns_01",
+    "category": "returns",
+    "language": "fr",
+    "title": "Politique de Retour sous 30 Jours",
+    "content": "Vous pouvez retourner les articles non utilisés dans leur emballage d'origine dans les 30 jours suivant la livraison pour un remboursement intégral. Les retours sont gratuits pour les produits endommagés ou non conformes. Pour les retours de convenance, des frais de 5,99 € sont déduits du remboursement.",
+    "source_url": "https://store.example.com/fr/politiques/retours#30-jours",
+    "embed_text": "Title: Politique de Retour sous 30 Jours\nCategory: returns\nContent: Vous pouvez retourner les articles non utilisés dans leur emballage d'origine dans les 30 jours suivant la livraison pour un remboursement intégral. Les retours sont gratuits pour les produits endommagés ou non conformes. Pour les retours de convenance, des frais de 5,99 € sont déduits du remboursement."
+  },
+  {
+    "id": "faq_fr_shipping_01",
+    "category": "shipping",
+    "language": "fr",
+    "title": "Délais et Tarifs de Livraison",
+    "content": "La livraison standard en France métropolitaine prend 3 à 5 jours ouvrés et est offerte dès 50 € d'achat (4,99 € en dessous). La livraison express s'effectue en 1 à 2 jours ouvrés (14,99 €). La livraison internationale prend entre 7 et 14 jours ouvrés.",
+    "source_url": "https://store.example.com/fr/politiques/livraison#tarifs",
+    "embed_text": "Title: Délais et Tarifs de Livraison\nCategory: shipping\nContent: La livraison standard en France métropolitaine prend 3 à 5 jours ouvrés et est offerte dès 50 € d'achat (4,99 € en dessous). La livraison express s'effectue en 1 à 2 jours ouvrés (14,99 €). La livraison internationale prend entre 7 et 14 jours ouvrés."
+  },
+  {
+    "id": "faq_fr_payments_01",
+    "category": "payments",
+    "language": "fr",
+    "title": "Moyens de Paiement et Remboursements",
+    "content": "Nous acceptons Visa, MasterCard, CB, PayPal, Apple Pay et Klarna. Les remboursements sont validés dans les 3 à 5 jours ouvrés suivant la réception du colis dans nos entrepôts.",
+    "source_url": "https://store.example.com/fr/politiques/paiements#modalites",
+    "embed_text": "Title: Moyens de Paiement et Remboursements\nCategory: payments\nContent: Nous acceptons Visa, MasterCard, CB, PayPal, Apple Pay et Klarna. Les remboursements sont validés dans les 3 à 5 jours ouvrés suivant la réception du colis dans nos entrepôts."
+  },
+  {
+    "id": "faq_fr_warranty_01",
+    "category": "warranty",
+    "language": "fr",
+    "title": "Garantie Constructeur de 1 An",
+    "content": "Tous nos produits électroniques bénéficient d'une garantie légale et fabricant de 1 an couvrant les pannes matérielles. Les dommages causés par une chute, l'oxydation liquide ou l'usure normale sont exclus.",
+    "source_url": "https://store.example.com/fr/politiques/garantie#conditions",
+    "embed_text": "Title: Garantie Constructeur de 1 An\nCategory: warranty\nContent: Tous nos produits électroniques bénéficient d'une garantie légale et fabricant de 1 an couvrant les pannes matérielles. Les dommages causés par une chute, l'oxydation liquide ou l'usure normale sont exclus."
+  },
+  {
+    "id": "faq_ja_returns_01",
+    "category": "returns",
+    "language": "ja",
+    "title": "30日間返品ポリシー",
+    "content": "商品到着後30日以内であれば、未使用かつ未開封の元のパッケージ状態に限り、全額返金にて返品を承ります。初期不良または誤配送の場合、返送料は弊社が全額負担いたします。お客様都合による返品の場合は、返送料として500円が返金額から差し引かれます。",
+    "source_url": "https://store.example.com/ja/policies/returns#30-days",
+    "embed_text": "Title: 30日間返品ポリシー\nCategory: returns\nContent: 商品到着後30日以内であれば、未使用かつ未開封の元のパッケージ状態に限り、全額返金にて返品を承ります。初期不良または誤配送の場合、返送料は弊社が全額負担いたします。お客様都合による返品の場合は、返送料として500円が返金額から差し引かれます。"
+  },
+  {
+    "id": "faq_ja_shipping_01",
+    "category": "shipping",
+    "language": "ja",
+    "title": "配送料金および配送日数",
+    "content": "日本国内の通常配送はご注文確定後2〜4営業日でお届けします。5,000円以上のご注文で配送料は無料です（未満の場合は一律550円）。お急ぎ便は翌日〜2営業日でお届け（手数料800円）。海外発送は通関状況により7〜14営業日かかります。",
+    "source_url": "https://store.example.com/ja/policies/shipping#rates",
+    "embed_text": "Title: 配送料金および配送日数\nCategory: shipping\nContent: 日本国内の通常配送はご注文確定後2〜4営業日でお届けします。5,000円以上のご注文で配送料は無料です（未満の場合は一律550円）。お急ぎ便は翌日〜2営業日でお届け（手数料800円）。海外発送は通関状況により7〜14営業日かかります。"
+  },
+  {
+    "id": "faq_ja_payments_01",
+    "category": "payments",
+    "language": "ja",
+    "title": "お支払い方法と返金処理期間",
+    "content": "クレジットカード（Visa、Mastercard、JCB、Amex）、PayPay、Apple Pay、コンビニ決済をご利用いただけます。返品受領および検品完了後、3〜5営業日以内に返金処理が行われます。クレジットカード会社により口座反映まで最大1〜2ヶ月かかる場合があります。",
+    "source_url": "https://store.example.com/ja/policies/payments#methods",
+    "embed_text": "Title: お支払い方法と返金処理期間\nCategory: payments\nContent: クレジットカード（Visa、Mastercard、JCB、Amex）、PayPay、Apple Pay、コンビニ決済をご利用いただけます。返品受領および検品完了後、3〜5営業日以内に返金処理が行われます。クレジットカード会社により口座反映まで最大1〜2ヶ月かかる場合があります。"
+  },
+  {
+    "id": "faq_ja_warranty_01",
+    "category": "warranty",
+    "language": "ja",
+    "title": "1年間メーカー限定保証",
+    "content": "すべての電子機器製品には、材質および製造上の欠陥に対する1年間のメーカー限定保証が付帯しています。落下、水没、不当な修理、経年劣化による破損は保証対象外となります。",
+    "source_url": "https://store.example.com/ja/policies/warranty#coverage",
+    "embed_text": "Title: 1年間メーカー限定保証\nCategory: warranty\nContent: すべての電子機器製品には、材質および製造上の欠陥に対する1年間のメーカー限定保証が付帯しています。落下、水没、不当な修理、経年劣化による破損は保証対象外となります。"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "faq_de_returns_01",
+    "category": "returns",
+    "language": "de",
+    "title": "30-tägiges Rückgaberecht",
+    "content": "Kunden können unbenutzte Artikel in der Originalverpackung innerhalb von 30 Tagen nach Erhalt gegen volle Rückerstattung zurücksenden. Der Rückversand ist bei beschädigten oder falschen Artikeln kostenlos. Bei normalen Rücksendungen wird eine Rücksendegebühr von 5,99 € von der Erstattung abgezogen.",
+    "source_url": "https://store.example.com/de/richtlinien/rueckgabe#30-tage"
+  },
+  {
+    "id": "faq_de_shipping_01",
+    "category": "shipping",
+    "language": "de",
+    "title": "Versandoptionen und Lieferzeiten",
+    "content": "Der Standardversand innerhalb Deutschlands dauert 3 bis 5 Werktage und ist ab einem Bestellwert von 50 € versandkostenfrei (sonst 4,99 €). Expressversand benötigt 1 bis 2 Werktage (14,99 €). Der internationale Versand dauert 7 bis 14 Werktage.",
+    "source_url": "https://store.example.com/de/richtlinien/versand#preise"
+  },
+  {
+    "id": "faq_de_payments_01",
+    "category": "payments",
+    "language": "de",
+    "title": "Zahlungsmethoden und Rückerstattungsfristen",
+    "content": "Wir akzeptieren Visa, MasterCard, PayPal, SOFORT Überweisung, Apple Pay und Klarna Rechnung. Nach Genehmigung im Lager erfolgt die Rückerstattung innerhalb von 3 bis 5 Werktagen auf das ursprüngliche Zahlungsmittel.",
+    "source_url": "https://store.example.com/de/richtlinien/zahlung#methoden"
+  },
+  {
+    "id": "faq_de_warranty_01",
+    "category": "warranty",
+    "language": "de",
+    "title": "1 Jahr Herstellergarantie",
+    "content": "Für alle elektronischen Geräte gilt eine einjährige Herstellergarantie auf Material- und Verarbeitungsfehler. Schäden durch Herunterfallen, Wassereinwirkung oder eigenmächtige Reparaturen sind ausgeschlossen.",
+    "source_url": "https://store.example.com/de/richtlinien/garantie#umfang"
+  }
+]
