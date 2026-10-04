@@ -11,7 +11,7 @@ class MultilingualRetriever:
         self,
         indexer: KnowledgeBaseIndexer,
         top_k: int = 3,
-        min_score_threshold: float = 0.35,
+        min_score_threshold: float = 0.25,
     ):
         self.indexer = indexer
         self.top_k = top_k
@@ -37,8 +37,9 @@ class MultilingualRetriever:
         query_vec = np.expand_dims(query_vec, axis=0)
 
         # 2. Search FAISS index
-        # Search a wider pool if language filter is applied
-        search_k = min(len(self.indexer.documents), k * 3 if language else k)
+        # Query a generous candidate pool so language filtering never starves relevant docs
+        total_docs = len(self.indexer.documents)
+        search_k = min(total_docs, max(k * 10, 30))
         scores, indices = self.indexer.index.search(query_vec, search_k)
 
         raw_scores = scores[0]

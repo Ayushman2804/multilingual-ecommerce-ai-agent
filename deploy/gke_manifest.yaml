@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multilingual-cs-agent-deployment
+  labels:
+    app: multilingual-cs-agent
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multilingual-cs-agent
+  template:
+    metadata:
+      labels:
+        app: multilingual-cs-agent
+    spec:
+      containers:
+      - name: agent-container
+        image: gcr.io/PROJECT_ID/multilingual-cs-agent:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "1000m"
+          limits:
+            memory: "4Gi"
+            cpu: "2000m"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: multilingual-cs-agent-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: multilingual-cs-agent
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: multilingual-cs-agent-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: multilingual-cs-agent-deployment
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
