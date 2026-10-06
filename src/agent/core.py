@@ -8,6 +8,7 @@ from src.agent.prompts import LOCALIZED_PROMPTS
 from src.agent.memory import session_manager, ConversationSession
 from src.agent.sentiment import compute_sentiment_score
 from src.agent.escalation import generate_handoff_ticket, HandoffTicket
+from src.agent.llm import llm_synthesizer
 from src.guardrails.pii import mask_pii
 from src.guardrails.safety import check_safety_and_scope
 from src.tools.order_tools import lookup_order, request_return_or_refund, lookup_product
@@ -127,9 +128,24 @@ class MultilingualCSAgent:
             citations = [doc["id"] for doc in rag_res["results"]]
             if rag_res["results"]:
                 top_doc = rag_res["results"][0]
-                response_text = f"{top_doc['content']} [SOURCE: {top_doc['id']}]"
+                fallback = f"{top_doc['content']} [SOURCE: {top_doc['id']}]"
+                response_text = llm_synthesizer.generate_response(
+                    query=sanitized_message,
+                    language=lang,
+                    context=rag_res["context_prompt"],
+                    default_fallback=fallback,
+                )
             else:
                 response_text = "I could not find a relevant policy. Let me connect you with an agent."
+
+        # If LLM is active and this was a tool or catalog query, synthesize a thoughtful response
+        if llm_synthesizer.is_active and intent in [Intent.ORDER_LOOKUP, Intent.RETURN_REQUEST, Intent.PRODUCT_INQUIRY] and tool_data:
+            response_text = llm_synthesizer.generate_response(
+                query=sanitized_message,
+                language=lang,
+                tool_data=tool_data,
+                default_fallback=response_text,
+            )
 
         # 5. Record session history
         session.add_turn(role="user", content=message, language=lang, intent=intent.value)
