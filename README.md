@@ -118,7 +118,7 @@ pytest tests/ -v
 python eval/run_eval.py
 
 # 5. Start the API server & web UI
-uvicorn src.api.main:app --host 0.0.0.0 --port 8080 --reload
+python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8080 --reload
 ```
 Navigate to `http://localhost:8080` to access the interactive chat UI.
 
